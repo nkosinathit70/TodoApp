@@ -1,14 +1,20 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+
+    <ion-navbar color="brown">
+        <ion-title>
+            ToDo Task App
+        </ion-title>
+    </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content color="brown">
+
+    <ion-item>
+        <img src="../assets/imgs/todo.jpg" alt="todo image">
+    </ion-item>
+
+
+    <button ion-button block (click)="addTask()">ADD TASK</button>
+
 </ion-content>

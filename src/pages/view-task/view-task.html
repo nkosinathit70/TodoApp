@@ -1,0 +1,23 @@
+<!--
+  Generated template for the ViewTaskPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="brown">
+        <ion-title>ViewTask</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div style="background-color: royalblue" *ngFor=" let list of taskList">
+        <h2>{{list.date}}</h2>
+        <p> {{list.name}}<br> {{list.task}}</p>
+    </div>
+
+    <ion-item>
+        <button (click)="addMyTask()" ion-button block> ADD</button>
+    </ion-item>
+</ion-content>
